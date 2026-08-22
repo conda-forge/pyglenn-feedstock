@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.1.13"
+  version: "0.2.0"
 
 package:
   name: pyglenn
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/ProfLeao/pyglenn/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: 038491b7936851fdd3a3bf55d3f4efc29f7fb5e59fa0099815a31e96cc319e4c
+  sha256: e31aa2bc71a0311e0cee6b136c96ee608c911e46f15069907b1d26b1817d6ad5
 
 build:
   number: 0
