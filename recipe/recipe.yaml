@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.2.0"
+  version: "0.3.0"
 
 package:
   name: pyglenn
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/ProfLeao/pyglenn/archive/refs/tags/v${{ version }}.tar.gz
-  sha256: e31aa2bc71a0311e0cee6b136c96ee608c911e46f15069907b1d26b1817d6ad5
+  sha256: 212d4a6734584a860ecbeafe6ddd3f5954bb5aa6596bc0dea8763b0dd7b060d1
 
 build:
   number: 0
@@ -23,10 +23,12 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
+    - numpy >=1.21
     - setuptools >=64.0
     - wheel
   run:
     - python >=${{ python_min }}
+    - numpy >=1.21
 
 tests:
   - python:
